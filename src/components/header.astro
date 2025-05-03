@@ -15,7 +15,7 @@ const currentPath = Astro.url.pathname;
     <!-- Contenedor de plecas con altura completa del header -->
     <div class="absolute left-0 top-0 h-12 w-full flex items-stretch -z-10 group-hover:bg-transparent">
       <!-- Bloque rosa -->
-      <div class="h-full w-[49px] ml-[-15px] -skew-x-[30deg] bg-pink-500 relative overflow-hidden transition-all duration-300 group-hover:w-[235px]">
+      <div class="h-full w-[49px] ml-[-15px] -skew-x-[30deg] bg-pink-500 relative overflow-hidden transition-all duration-300 group-hover:w-[230px]">
         <div class="absolute inset-0 bg-pink-500 clip-diagonal-left"></div>
       </div>
 
@@ -30,7 +30,7 @@ const currentPath = Astro.url.pathname;
       </div>
     </div>
 
-    <nav class="relative z-30 flex justify-end w-full text-sm text-neutral-500 dark:text-neutral-400">
+    <nav class="relative z-30 flex justify-end w-full text-base text-neutral-500 dark:text-neutral-400">
       <div id="menu" class="flex flex-row items-center gap-4">
         {menus.map((menu) => {
           const isActive = currentPath === menu.url;
