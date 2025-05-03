@@ -2,7 +2,6 @@
 import Button from "../components/button.astro";
 import Homehtml from "../components/home/home-html.astro";
 import Separator from "../components/home/separator.astro";
-import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
 import Homexlsx from "../components/home/home-xlsx.astro";
 import Homecmyk from "../components/home/home-cmyk.astro";
@@ -32,12 +31,12 @@ import Homecmyk from "../components/home/home-cmyk.astro";
     </div>
   </div>
 
-  <Separator text="html!" />
+  <Separator />
   <Homehtml />
 
-  <Separator text="cmyk!" />
+  <Separator />
   <Homecmyk />
 
-  <Separator text="xlsx!" />
+  <Separator  />
   <Homexlsx />
 </Layout>
