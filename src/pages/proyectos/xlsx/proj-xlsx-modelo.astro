@@ -1,0 +1,137 @@
+---
+import projects from "../../../collections/col-cmyk.json";
+import PageHeading from "../../../components/page-heading.astro";
+import Project from "../../../components/proj-cmyk.astro";
+import Layout from "../../../layouts/main.astro";
+import Separator from "../../../components/home/separator.astro";
+
+---
+
+<Layout title="xlsx!">
+  <section class="relative max-w-4xl px-7 mx-auto mt-1 lg:mt-0">
+    
+    <!-- Contenedor principal -->
+    <div class="flex flex-col md:flex-row md:gap-10 items-start w-full">
+      
+      <!-- Titulo -->
+      <div class="w-full md:w-2/3">
+        <h1 class="mb-0 text-6xl
+        font-bold leading-tight
+        md:text-5xl lg:text-6xl
+        text-fuchsia-600 group flex
+        items-center space-x-2">
+
+        <span>xlsx</span>
+        
+        <span class="text-6xl
+        translate-y-0 text-cyan-400
+        rotate-0 group-hover:-rotate-12
+        group-hover:scale-[1.5]
+        group-hover:text-pink-500
+        ease-in-out duration-300"
+        >!</span>
+        </h1>
+
+      <!-- subitulo -->
+
+        <h1 class="mb-0 text-2xl mt-1
+        font-bold leading-tight mb-1
+        text-fuchsia-600 groupflex
+        items-center space-x-2">
+        <span>
+        Editor de productos para publicación
+        </span>
+        </h1>
+
+
+      <!-- descripcion -->          
+
+        <p class="mt-0 text-base text-neutral-600">
+        El proyecto "Modelo" permitió a los equipos de marketing y diseño seleccionar y organizar productos para publicaciones impresas de forma automatizada y visual. Con base en datos de ventas, publicaciones anteriores y estructuras por categoría, se generaban listados sugeridos.
+        </p>
+      </div>
+
+  <Separator text="html!" />
+
+      <!-- Imagen lateral -->
+      <div class="w-full md:w-1/3">
+        <img 
+          src="/assets/images/projects/xlsx/proj-xlsx-modelo_2.jpg" 
+          class="w-full mt-2 mb-2" 
+        />
+        <div class="p-4 bg-slate-100
+        text-sm mt-2 text-neutral-700">
+        <p>
+Una buena selección de productos para publicar es clave para impulsar las ventas: recuerda al cliente su existencia y permite destacar artículos relevantes según la temporada.        </p>
+    </div>
+      </div>
+    </div>
+
+  <Separator text="html!" />
+
+    <!-- Información del proyecto adicional -->
+    <div class="w-full mt-1">
+
+      <!-- objetivo-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-fuchsia-600
+      flex items-center space-x-2">
+      <span>objetivo</span>
+      </h2>
+      
+      <p class="mt-2 text-base text-neutral-600">
+      Facilitar la selección y organización de productos para publicaciones impresas mensuales, basándose en datos de ventas, historial de publicaciones, número de páginas por sección y categorías de productos.
+      </p>
+
+      <!-- tecnologias-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-fuchsia-600
+      flex items-center space-x-2">
+      <span>tecnologías usadas</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      Microsoft Excel con macros y Visual Basic: Para automatizar la generación de listados y permitir una interfaz amigable para los usuarios.
+      </br>ImageMagick: Utilizado para procesar y adaptar imágenes de productos según las necesidades de diseño.
+
+      </p>
+
+      <!--resultado-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-fuchsia-600
+      flex items-center space-x-2">
+      <span>resultado</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      Se redujo el tiempo de selección de productos en un 75%, facilitando el diseño editorial y evitando retrabajos. La herramienta fue fundamental para mejorar la planeación mensual de publicaciones y optimizar la colaboración entre equipos.
+      </p>
+
+  <Separator text="html!" />
+
+    <!--imagen-->
+    </div>
+      <img 
+          src="/assets/images/projects/xlsx/proj-xlsx-modelo_4.jpg" 
+
+        class="mt-4 w-full md:w-auto" 
+      />
+    <div class="p-4 bg-slate-100
+    text-sm mt-4 text-neutral-700">
+        <p>
+Con una interfaz fácil de usar pensada en el usuario, los productos se preacomodan en la página y las imágenes sirven de guía para visualizar el espacio disponible. El analista de producto puede mantener la propuesta inicial o modificarla según su criterio.    </div>
+    </div>
+      <img 
+          src="/assets/images/projects/xlsx/proj-xlsx-modelo_3.jpg" 
+
+        class="mt-4 w-full md:w-auto" 
+      />
+    <div class="p-4 bg-slate-100
+    text-sm mt-4 text-neutral-700">
+        <p>
+Esta aplicación permite al analista de producto seleccionar artículos de un pool previamente filtrado según ventas, stock, frecuencia de publicación y su historial. Sirve como mockup para el equipo de diseño, indicando qué productos incluir en cada página, asignando descuentos y destacando los más relevantes.        </p>
+    </div>
+
+    <!-- final -->       
+  </section>
+</Layout>

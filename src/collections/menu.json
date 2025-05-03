@@ -1,0 +1,28 @@
+[
+	{
+	  "name": "home",
+	  "url": "/",
+	  "color": "text-cyan-400"
+	},
+	{
+	  "name": "html",
+	  "url": "/html",
+	  "color": "text-fuchsia-600"
+	},
+	{
+	  "name": "cmyk",
+	  "url": "/cmyk",
+	  "color": "text-fuchsia-600"
+	},
+	{
+	  "name": "xlsx",
+	  "url": "/xlsx",
+	  "color": "text-fuchsia-600"
+	},
+	{
+		"name": "about",
+		"url": "/about",
+		"color": "text-cyan-400"
+	  }
+  ]
+  

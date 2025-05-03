@@ -1,0 +1,43 @@
+---
+import Button from "../components/button.astro";
+import Homehtml from "../components/home/home-html.astro";
+import Separator from "../components/home/separator.astro";
+import Writings from "../components/home/writings.astro";
+import Layout from "../layouts/main.astro";
+import Homexlsx from "../components/home/home-xlsx.astro";
+import Homecmyk from "../components/home/home-cmyk.astro";
+---
+
+<Layout title="di!">
+<section class="relative max-w-4xl px-7 mx-auto mt-1 lg:mt-0 ">
+    <div class="flex items-start md:flex-row">
+      <div class="relative w-full md:w-4/5">
+        <h1 class="mb-2 text-6xl font-bold leading-tight md:text-5xl lg:text-6xl text-fuchsia-600 group flex items-center space-x-2">
+          <span>bienvenido</span>
+          <span
+            class="text-6xl translate-y-0 text-cyan-400 rotate-0 group-hover:-rotate-12 group-hover:scale-[1.5] group-hover:text-fuchsia-600 ease-in-out duration-300"
+          >
+            !
+          </span>
+        </h1>
+        <p class="mt-2 text-base text-neutral-600">
+          Soy diseñador gráfico y desarrollador front-end, especializado en crear soluciones digitales visualmente <b class='text-pink-500'>atractivas, funcionales y eficientes.</b> Trabajo desde el diseño en Figma hasta la implementación con <b class='text-cyan-400'>HTML, CSS, JavaScript y bases de datos</b>, enfocándome en usabilidad, rendimiento y escalabilidad. También optimizo flujos en diseño editorial con automatizaciones en InDesign, y desarrollo herramientas en <b class='text-pink-500'>Excel</b> que mejoran la toma de decisiones mediante datos claros y <b class='text-fuchsia-600'>procesos eficientes.</b>
+        </p>
+      </div>
+      <div class="relative md:pl-10 md:w-1/3 flex items-start">
+        <div class="relative">
+          <img src="/assets/images/photo.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Separator text="html!" />
+  <Homehtml />
+
+  <Separator text="cmyk!" />
+  <Homecmyk />
+
+  <Separator text="xlsx!" />
+  <Homexlsx />
+</Layout>

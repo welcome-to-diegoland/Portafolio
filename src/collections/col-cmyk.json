@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Mockup para página de alimentos",
+		"description": "Mockup de página web para empresa de comida, centrado en UX y diseño.",
+		"image": "/assets/images/projects/cmyk/proj-cmyk-foodexp_1.jpg",
+		"url": "/proyectos/cmyk/proj-cmyk-foodexp"
+	},
+	{
+		"name": "Script para refoliar archivos y páginas de InDesign",
+		"description": "Script para renombrar archivos y páginas InDesign según el orden correcto.",
+		"image": "/assets/images/projects/cmyk/proj-cmyk-refolio_1.jpg",
+		"url": "/proyectos/cmyk/proj-cmyk-refolio"
+	},
+	{
+		"name": "GREPs para modificar estilos en InDesign",
+		"description": "Conjunto de comandos GREP para aplicar estilos automáticos en InDesign.",
+		"image": "/assets/images/projects/cmyk/proj-cmyk-greps_1.jpg",
+		"url": "/proyectos/cmyk/proj-cmyk-greps"
+	},
+	{
+		"name": "Catálogo para empresa de herramientas",
+		"description": "Diseño impreso de catálogo conectado al PIM para minimizar errores.",
+		"image": "/assets/images/projects/cmyk/proj-cmyk-catalogo_1.jpg",
+		"url": "/proyectos/cmyk/proj-cmyk-catalogo"
+	},
+	{
+		"name": "Revista para empresa de herramientas",
+		"description": "Diseño impreso de revista conectada al PIM con estilos predefinidos.",
+		"image": "/assets/images/projects/cmyk/proj-cmyk-mc_1.jpg",
+		"url": "/proyectos/cmyk/proj-cmyk-mc"
+	},
+	{
+		"name": "Material publicitario para empresa de herramientas",
+		"description": "Diseño de material publicitario basado en datos del PIM con eficiencia mejorada.",
+		"image": "/assets/images/projects/cmyk/proj-cmyk-pop_1.jpg",
+		"url": "/proyectos/cmyk/proj-cmyk-pop"
+	}
+]

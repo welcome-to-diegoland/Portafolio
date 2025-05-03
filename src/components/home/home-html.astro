@@ -1,0 +1,32 @@
+---
+import colhtml from "../../collections/col-html.json";
+import Button from "../button.astro";
+import Project from "../proj-html.astro";
+---
+
+<section class="lg:px-0">
+    <h2 class="text-4xl font-bold leading-10 tracking-tight text-cyan-400">
+    html<b class='text-pink-500'>!</b>
+  </h2>
+  <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+  Interfaces, código, APIs, bases de datos, y más!
+  </p>
+  <div class="grid items-stretch w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mt-7">
+    {
+      colhtml.slice(0, 3).map((colhtml) => {  // Aquí limitas a 3 proyectos
+        return (
+          <Project
+            name={colhtml.name}
+            description={colhtml.description}
+            image={colhtml.image}
+            url={colhtml.url}
+          />
+        );
+      })
+    }
+  </div>
+
+  <div class="flex items-center justify-center w-full py-5">
+    <Button text="ver mas html!" link="/html" />
+  </div>
+</section>

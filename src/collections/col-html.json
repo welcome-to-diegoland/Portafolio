@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Página para blog de diseño editorial",
+		"description": "Blog de diseño editorial hecho en Astro con datos modulares en JSON.",
+		"image": "/assets/images/projects/html/proj-html-editorial_1.jpg",
+		"url": "/proyectos/html/proj-html-editorial"
+	},
+	{
+		"name": "Diseño para módulo de ingreso a cuenta",
+		"description": "Módulo de login con verificación, errores y efectos visuales avanzados.",
+		"image": "/assets/images/projects/html/proj-html-glitch_1.jpg",
+		"url": "/proyectos/html/proj-html-glitch"
+	},
+	{
+		"name": "Diseño de blog",
+		"description": "Diseño de blog con retícula, BEM y Flexbox para estructura responsiva.",
+		"image": "/assets/images/projects/html/proj-html-periodico_1.jpg",
+		"url": "/proyectos/html/proj-html-periodico"
+	},
+	{
+		"name": "Código para generar una calculadora",
+		"description": "Calculadora web hecha en HTML, CSS y JS como práctica frontend.",
+		"image": "/assets/images/projects/html/proj-html-calculadora_1.jpg",
+		"url": "/proyectos/html/proj-html-calculadora"
+	},
+	{
+		"name": "API y diseño para obtener listado de personajes",
+		"description": "Sitio web que consume una API para mostrar personajes dinámicamente.",
+		"image": "/assets/images/projects/html/proj-html-api_1.jpg",
+		"url": "/proyectos/html/proj-html-api"
+	},
+	{
+		"name": "Código para generar cambios en jQuery",
+		"description": "Práctica en jQuery para manipular el DOM con estilo y elementos dinámicos.",
+		"image": "/assets/images/projects/html/proj-html-jquery_1.jpg",
+		"url": "/proyectos/html/proj-html-jquery"
+	}
+]

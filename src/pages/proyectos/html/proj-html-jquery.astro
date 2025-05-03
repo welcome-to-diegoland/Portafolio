@@ -1,0 +1,130 @@
+---
+import projects from "../../../collections/col-cmyk.json";
+import PageHeading from "../../../components/page-heading.astro";
+import Project from "../../../components/proj-cmyk.astro";
+import Layout from "../../../layouts/main.astro";
+import Separator from "../../../components/home/separator.astro";
+---
+
+<Layout title="html!">
+  <section class="relative max-w-4xl px-7 mx-auto mt-1 lg:mt-0">
+    
+    <!-- Contenedor principal -->
+    <div class="flex flex-col md:flex-row md:gap-10 items-start w-full">
+      
+      <!-- Titulo -->
+      <div class="w-full md:w-2/3">
+        <h1 class="mb-0 text-6xl
+        font-bold leading-tight
+        md:text-5xl lg:text-6xl
+        text-cyan-400 group flex
+        items-center space-x-2">
+
+        <span>html</span>
+        
+        <span class="text-6xl
+        translate-y-0 text-pink-500
+        rotate-0 group-hover:-rotate-12
+        group-hover:scale-[1.5]
+        group-hover:text-fuchsia-600
+        ease-in-out duration-300"
+        >!</span>
+        </h1>
+
+      <!-- subitulo -->
+
+        <h1 class="mb-0 text-2xl mt-1
+        font-bold leading-tight mb-1
+        text-cyan-400 groupflex
+        items-center space-x-2">
+        <span>
+        Código para generar cambios en jQuery
+        </span>
+        </h1>
+
+
+      <!-- descripcion -->          
+
+        <p class="mt-0 text-base text-neutral-600">
+        Ejercicio práctico para manipular el DOM utilizando jQuery, creando toggles de estilo y elementos dinámicos. Este proyecto fue útil para afianzar los conceptos de jQuery y su interacción con HTML y CSS, mejorando la fluidez en la edición de interfaces dinámicas y la creación de efectos visuales.
+        </p>
+      </div>
+
+      <!-- Imagen lateral -->
+      <div class="w-full md:w-1/3">
+        <img 
+          src="/assets/images/projects/html/proj-html-jquery_2.jpg" 
+          alt="Vista previa de proyecto" 
+          class="w-full mt-2 mb-2" 
+        />
+        <div class="p-4 bg-slate-100
+        text-sm mt-2 text-neutral-700">
+        <p>
+jQuery simplifica la manipulación del DOM y eventos en JavaScript.
+        </p>
+    </div>
+      </div>
+    </div>
+
+  <Separator text="html!" />
+
+    <!-- Información del proyecto adicional -->
+    <div class="w-full mt-1">
+
+      <!-- objetivo-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-cyan-400
+      flex items-center space-x-2">
+      <span>objetivo</span>
+      </h2>
+      
+      <p class="mt-2 text-base text-neutral-600">
+      Generar un código que realizara cambios dinámicos en una página utilizando jQuery, permitiendo toggles entre estilos y la adición de nuevos elementos de forma interactiva.
+      </p>
+
+      <!-- tecnologias-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-cyan-400
+      flex items-center space-x-2">
+      <span>tecnologías usadas</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      HTML: estructura de la página y elementos interactivos
+</br>
+JavaScript: para la lógica de interacción dinámica.
+</br>
+CSS: para el estilo y los efectos visuales.
+</br>
+jQuery: para facilitar la manipulación del DOM.
+
+      </p>
+
+      <!--resultado-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-cyan-400
+      flex items-center space-x-2">
+      <span>resultado</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      Se consolidaron los conocimientos en CSS y jQuery, permitiendo mejorar la fluidez en la creación de interfaces dinámicas. El uso de jQuery facilitó la manipulación del DOM de forma eficiente, haciendo que las interacciones fueran más ágiles y dinámicas. El proyecto también permitió reforzar conceptos clave sobre cómo las herramientas de JavaScript pueden mejorar la experiencia del usuario mediante cambios visuales en tiempo real.
+      </p>
+  <Separator text="html!" />
+
+    <!--imagen-->
+    </div>
+      <img 
+          src="/assets/images/projects/html/proj-html-jquery_3.jpg" 
+        class="mt-4 w-full md:w-auto" 
+      />
+    <div class="p-4 bg-slate-100
+    text-sm mt-4 text-neutral-700">
+        <p>
+Interactuando con el DOM y JavaScript, jQuery puede lograr efectos visuales, manipulación de elementos, manejo de eventos y llamadas AJAX de forma sencilla.        </p>
+        </div>
+
+
+    <!-- final -->       
+  </section>
+</Layout>

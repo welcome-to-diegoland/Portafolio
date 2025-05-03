@@ -1,0 +1,47 @@
+---
+import projects from "../collections/col-cmyk.json";
+import PageHeading from "../components/page-heading.astro";
+import Project from "../components/proj-cmyk.astro";
+import Layout from "../layouts/main.astro";
+---
+<Layout title="cmyk!">
+  <section class="relative max-w-4xl px-7 mx-auto mt-1 lg:mt-0 ">
+    <div class="flex items-start md:flex-row">
+      <div class="relative w-full md:w-4/5">
+        <h1 class="mb-2 text-6xl font-bold leading-tight md:text-5xl lg:text-6xl text-pink-500 group flex items-center space-x-2">
+          <span>cmyk</span>
+          <span
+            class="text-6xl translate-y-0 text-fuchsia-600 rotate-0 group-hover:-rotate-12 group-hover:scale-[1.5] group-hover:text-cyan-400 ease-in-out duration-300"
+          >
+            !
+          </span>
+        </h1>
+        <p class="mt-2 text-base text-neutral-600">
+          En <b class='text-pink-500'>diseño editorial</b>, creo <b class='text-cyan-400'>layouts impactantes</b> que comuniquen eficazmente el mensaje del proyecto. Trabajo en <b class='text-cyan-400'>revistas</b>, <b class='text-pink-500'>libros</b> y materiales promocionales, equilibrando estética y funcionalidad. Utilizo <b class='text-cyan-400'>scripts</b> en InDesign, Photoshop e Illustrator, y <b class='text-cyan-400'>GREPs</b> en InDesign para estilizar textos rápidamente. Aplico principios de <b class='text-pink-500'>jerarquía</b> y <b class='text-cyan-400'>contraste</b> para garantizar diseños atractivos y efectivos.</br></br><b class='text-fuchsia-600'>Mi ventaja:</b> Agilizo procesos creativos mediante la automatización, optimizando flujos de trabajo y garantizando diseños eficientes y sin errores.
+        </p>
+      </div>
+      <div class="relative md:pl-10 md:w-1/3 flex items-start">
+        <div class="relative">
+          <img src="/assets/images/photo.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-3"
+  >
+    {
+      projects.map((project) => {
+        return (
+          <Project
+            name={project.name}
+            description={project.description}
+            image={project.image}
+            url={project.url}
+          />
+        )
+      })
+    }
+  </div>
+</section>
+</Layout>

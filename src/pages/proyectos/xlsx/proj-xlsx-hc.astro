@@ -1,0 +1,130 @@
+---
+import projects from "../../../collections/col-cmyk.json";
+import PageHeading from "../../../components/page-heading.astro";
+import Project from "../../../components/proj-cmyk.astro";
+import Layout from "../../../layouts/main.astro";
+import Separator from "../../../components/home/separator.astro";
+
+---
+
+<Layout title="xlsx!">
+  <section class="relative max-w-4xl px-7 mx-auto mt-1 lg:mt-0">
+    
+    <!-- Contenedor principal -->
+    <div class="flex flex-col md:flex-row md:gap-10 items-start w-full">
+      
+      <!-- Titulo -->
+      <div class="w-full md:w-2/3">
+        <h1 class="mb-0 text-6xl
+        font-bold leading-tight
+        md:text-5xl lg:text-6xl
+        text-fuchsia-600 group flex
+        items-center space-x-2">
+
+        <span>xlsx</span>
+        
+        <span class="text-6xl
+        translate-y-0 text-cyan-400
+        rotate-0 group-hover:-rotate-12
+        group-hover:scale-[1.5]
+        group-hover:text-pink-500
+        ease-in-out duration-300"
+        >!</span>
+        </h1>
+
+      <!-- subitulo -->
+
+        <h1 class="mb-0 text-2xl mt-1
+        font-bold leading-tight mb-1
+        text-fuchsia-600 groupflex
+        items-center space-x-2">
+        <span>
+        Hojas de contacto de imágenes de producto
+        </span>
+        </h1>
+
+
+      <!-- descripcion -->          
+
+        <p class="mt-0 text-base text-neutral-600">
+        Con el objetivo de facilitar la validación visual de imágenes por SKU, se creó una herramienta para generar hojas de contacto claras y organizadas que representaran líneas y grupos de productos.
+        </p>
+      </div>
+
+  <Separator text="html!" />
+
+      <!-- Imagen lateral -->
+      <div class="w-full md:w-1/3">
+        <img 
+          src="/assets/images/projects/xlsx/proj-xlsx-hc_2.jpg" 
+          class="w-full mt-2 mb-2" 
+        />
+        <div class="p-4 bg-slate-100
+        text-sm mt-2 text-neutral-700">
+        <p>
+Al dar de alta nuevos productos, lo más importante es generar toda la información necesaria para que se vendan, especialmente las imágenes.        </p>
+    </div>
+      </div>
+    </div>
+
+    <!-- Información del proyecto adicional -->
+    <div class="w-full mt-1">
+
+      <!-- objetivo-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-fuchsia-600
+      flex items-center space-x-2">
+      <span>objetivo</span>
+      </h2>
+      
+      <p class="mt-2 text-base text-neutral-600">
+      Crear hojas de contacto que representen grupos de productos y productos por línea. Se deseaba poder revisar las imágenes por SKU para la aprobación por parte del grupo de diseño.
+      </p>
+
+      <!-- tecnologias-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-fuchsia-600
+      flex items-center space-x-2">
+      <span>tecnologías usadas</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      Python: Lenguaje de programación utilizado para automatizar la generación de hojas de contacto.
+</br>
+OpenOffice: Suite de oficina de código abierto que permitió la visualización y edición de las hojas generadas.
+</br>
+Adobe Acrobat: Herramienta utilizada para revisar y anotar documentos PDF generados a partir de las hojas de contacto.
+</br>
+ImageMagick: Herramienta de procesamiento de imágenes que permitió la manipulación y conversión masiva de archivos gráficos.
+
+      </p>
+
+      <!--resultado-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-fuchsia-600
+      flex items-center space-x-2">
+      <span>resultado</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      El proceso para dar de alta productos nuevos mejoró, ya que los Product Managers pueden seleccionar las imágenes de una manera más ordenada y dejar comentarios para el equipo de diseño, evitando que imágenes no aprobadas lleguen a impresos y web.
+      </p>
+
+  <Separator text="html!" />
+
+    <!--imagen-->
+    </div>
+      <img 
+          src="/assets/images/projects/xlsx/proj-xlsx-hc_3.jpg" 
+        class="mt-4 w-full md:w-auto" 
+      />
+    <div class="p-4 bg-slate-100
+    text-sm mt-4 text-neutral-700">
+        <p>
+Para generar la hoja de contacto se toma un archivo .xlsx que contiene los productos que se agregarán al sistema. Python genera una retícula en Excel con los productos agrupados por familias, tomando las imágenes generadas por el equipo de diseño y acomodándolas según su tipo. Dependiendo de los requerimientos de las imágenes y del canal de publicación, estas deben cumplir ciertas reglas: si una imagen no funciona para impreso pero sí para web, se marca con la nomenclatura 'web'; si no es apta para ninguno de los dos canales, se marca con la nomenclatura 'no'. Al momento de ser procesado, esto colorea la celda correspondiente para que el analista de producto pueda conocer el estatus de la imagen y tomar una decisión.        </p>
+    </div>
+
+
+    <!-- final -->       
+  </section>
+</Layout>

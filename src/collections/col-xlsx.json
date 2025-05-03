@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Editor de orden de galerías",
+		"description": "Editor en Excel para ordenar imágenes por SKU en galerías de productos.",
+		"image": "/assets/images/projects/xlsx/proj-xlsx-visualizador_1.jpg",
+		"url": "/proyectos/xlsx/proj-xlsx-visualizador"
+	},
+	{
+		"name": "Editor de productos para publicación",
+		"description": "Herramienta en Excel para seleccionar productos impresos según datos de ventas y categoría.",
+		"image": "/assets/images/projects/xlsx/proj-xlsx-modelo_1.jpg",
+		"url": "/proyectos/xlsx/proj-xlsx-modelo"
+	},
+	{
+		"name": "Representación de tablas de producto XML",
+		"description": "Visualizador de tablas XML complejas en formato Excel más accesible.",
+		"image": "/assets/images/projects/xlsx/proj-xlsx-tablas_1.jpg",
+		"url": "/proyectos/xlsx/proj-xlsx-tablas"
+	},
+	{
+		"name": "Generación de archivos de datos para web",
+		"description": "Generador automatizado de archivos CSV con datos esenciales para e-commerce.",
+		"image": "/assets/images/projects/xlsx/proj-xlsx-magento_1.jpg",
+		"url": "/proyectos/xlsx/proj-xlsx-magento"
+	},
+	{
+		"name": "Generación de listado de precios SQL",
+		"description": "Generador de listados de precios SQL para usar en diseño desde Dynamics.",
+		"image": "/assets/images/projects/xlsx/proj-xlsx-precios_1.jpg",
+		"url": "/proyectos/xlsx/proj-xlsx-precios"
+	},
+	{
+		"name": "Hojas de contacto de imágenes de producto",
+		"description": "Hojas de contacto en Excel para validar imágenes por SKU visualmente.",
+		"image": "/assets/images/projects/xlsx/proj-xlsx-hc_1.jpg",
+		"url": "/proyectos/xlsx/proj-xlsx-hc"
+	}
+]

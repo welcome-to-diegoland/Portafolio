@@ -1,0 +1,127 @@
+---
+import projects from "../../../collections/col-cmyk.json";
+import PageHeading from "../../../components/page-heading.astro";
+import Project from "../../../components/proj-cmyk.astro";
+import Layout from "../../../layouts/main.astro";
+import Separator from "../../../components/home/separator.astro";
+
+---
+
+<Layout title="mis proyectos!">
+  <section class="relative max-w-4xl px-7 mx-auto mt-1 lg:mt-0">
+    
+    <!-- Contenedor principal -->
+    <div class="flex flex-col md:flex-row md:gap-10 items-start w-full">
+      
+      <!-- Titulo -->
+      <div class="w-full md:w-2/3">
+        <h1 class="mb-0 text-6xl
+        font-bold leading-tight
+        md:text-5xl lg:text-6xl
+        text-pink-500 group flex
+        items-center space-x-2">
+
+        <span>cmyk</span>
+        
+        <span class="text-6xl
+        translate-y-0 text-fuchsia-600
+        rotate-0 group-hover:-rotate-12
+        group-hover:scale-[1.5]
+        group-hover:text-cyan-400
+        ease-in-out duration-300"
+        >!</span>
+        </h1>
+
+      <!-- subitulo -->
+
+        <h1 class="mb-0 text-2xl mt-1
+        font-bold leading-tight mb-1
+        text-pink-500 groupflex
+        items-center space-x-2">
+        <span>
+        Script para refoliar archivos y páginas de InDesign
+        </span>
+        </h1>
+
+
+      <!-- descripcion -->          
+
+        <p class="mt-0 text-base text-neutral-600">
+        Este script de InDesign automatiza el cambio de nombres de archivos y folios internos para que reflejen el orden correcto de las páginas. Solo requiere seleccionar los archivos y definir el número inicial.
+Desarrollado en JavaScript para InDesign, ha ayudado a reducir errores de numeración y costos por correcciones, ofreciendo un proceso más limpio y ágil para la producción editorial.
+
+        </p>
+      </div>
+
+      <!-- Imagen lateral -->
+      <div class="w-full md:w-1/3">
+        <img 
+          src="/assets/images/projects/cmyk/proj-cmyk-refolio_2.jpg" 
+          alt="Vista previa de proyecto" 
+          class="w-full mt-2 mb-2" 
+        />
+        <div class="p-4 bg-slate-100
+        text-sm mt-2 text-neutral-700">
+        <p>
+Refoliar páginas y renombrar archivos: la tarea más tediosa para un diseñador, especialmente cuando se trata de 2,274 páginas, como en nuestro caso.        </p>
+    </div>
+      </div>
+    </div>
+  <Separator text="html!" />
+
+    <!-- Información del proyecto adicional -->
+    <div class="w-full mt-1">
+
+      <!-- objetivo-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-pink-500
+      flex items-center space-x-2">
+      <span>objetivo</span>
+      </h2>
+      
+      <p class="mt-2 text-base text-neutral-600">
+      Permitir el cambio automático de nombres de archivos y folios dentro de los documentos de InDesign, reflejando correctamente el orden de las páginas según los requerimientos de publicación dentro del PIM.
+      </p>
+
+      <!-- tecnologias-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-pink-500
+      flex items-center space-x-2">
+      <span>tecnologías usadas</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      JavaScript: automatización de tareas en InDesign.
+</br>
+Adobe InDesign: entorno de scripting y edición editorial.
+
+      </p>
+
+      <!--resultado-->
+      <h2 class="mb-1 text-2xl mt-5 font-bold
+      leading-tight text-pink-500
+      flex items-center space-x-2">
+      <span>resultado</span>
+      </h2>
+
+      <p class="mt-2 text-base text-neutral-600">
+      Se logró una reducción significativa en los tiempos de entrega y en los errores relacionados con la numeración de páginas. Este proceso evitó devoluciones de imprenta, que generaban costos adicionales, y facilitó una producción editorial más fluida y eficiente.
+      </p>
+  <Separator text="html!" />
+
+    <!--imagen-->
+    </div>
+      <img 
+       src="/assets/images/projects/cmyk/proj-cmyk-refolio_3.jpg" 
+        class="mt-4 w-full md:w-auto" 
+      />
+    <div class="p-4 bg-slate-100
+    text-sm mt-4 text-neutral-700">
+        <p>
+El script te permite seleccionar una carpeta con los archivos a procesar. Una vez elegida, te solicita el primer número de la serie que deseas crear. Muestra una vista previa con un listado de los archivos, incluyendo sus nombres originales y los nombres finales. Al finalizar el proceso, genera dos versiones de cada archivo: una con el nuevo nombre y otra con el nombre original, precedido por la nomenclatura BU_, para tener una copia de respaldo.        </p>
+        </div>
+
+
+    <!-- final -->       
+  </section>
+</Layout>
