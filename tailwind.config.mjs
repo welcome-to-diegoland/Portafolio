@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
-	  "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}" // Asegúrate de que las rutas de tus archivos sean correctas
+	  "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}" 
 	],
 	safelist: [
 	  "text-red-500",
