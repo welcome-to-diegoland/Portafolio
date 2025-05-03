@@ -4,80 +4,66 @@ import Logo from "../components/logo.astro";
 const currentPath = Astro.url.pathname;
 ---
 
-<!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
+<!-- Div invisible para altura -->
 <div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
+
 <header id="header" class="absolute top-0 z-50 w-full pt-4">
-  <div
-    class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
-  >
-    
-    <div
-      id="mobileMenuBackground"
-      onclick="closeMobileMenu()"
-      class="fixed inset-0 z-40 hidden w-screen h-screen duration-300 ease-out bg-white/90 dark:bg-neutral-950/90"
-    ></div>
-    <nav
-      class="relative z-30 flex flex-row-reverse justify-start w-full text-sm sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row"
-    >
-      <div
-        id="openMenu"
-        class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden"
-      >
-        <svg
-          class="w-8 h-8 dark:text-neutral-200"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
+  <div class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl group">
+
+    <!-- Contenedor de plecas con altura completa del header -->
+    <div class="absolute left-0 top-0 h-12 w-full flex items-stretch -z-10 group-hover:bg-transparent">
+      <!-- Bloque rosa -->
+      <div class="h-full w-[25px] bg-pink-500 relative overflow-hidden transition-all duration-300 group-hover:w-[210px]">
+        <div class="absolute inset-0 bg-pink-500 clip-diagonal-left"></div>
+      </div>
+      
+      <!-- Bloque cyan -->
+      <div class="h-full w-[24px] -skew-x-12 bg-cyan-400 relative overflow-hidden transition-all duration-500 group-hover:w-[160px] ml-[-10px]">
+        <div class="absolute inset-0 bg-cyan-400 clip-diagonal-left"></div>
+      </div>
+      
+      <!-- Bloque fuchsia -->
+      <div class="h-full w-[14px] -skew-x-12 bg-fuchsia-600 relative overflow-hidden transition-all duration-800 group-hover:w-[95px] ml-[-10px]">
+        <div class="absolute inset-0 bg-fuchsia-600 clip-diagonal-right"></div>
+      </div>
+    </div>
+
+    <!-- Resto del código del header -->
+    <div id="mobileMenuBackground" onclick="closeMobileMenu()" class="fixed inset-0 z-40 hidden w-screen h-screen duration-300 ease-out bg-white/90 dark:bg-neutral-950/90"></div>
+    <nav class="relative z-30 flex flex-row-reverse justify-start w-full text-sm sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row">
+      <div id="openMenu" class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden">
+        <svg class="w-8 h-8 dark:text-neutral-200" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M4 8h16M4 16h16"></path>
         </svg>
       </div>
-      <div
-        id="closeMenu"
-        class="flex flex-col items-end justify-center hidden w-6 h-6 ml-4 -translate-x-1 cursor-pointer sm:hidden"
-      >
-        <svg
-          class="w-6 h-6 text-neutral-600 dark:text-neutral-200"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
+      <div id="closeMenu" class="flex flex-col items-end justify-center hidden w-6 h-6 ml-4 -translate-x-1 cursor-pointer sm:hidden">
+        <svg class="w-6 h-6 text-neutral-600 dark:text-neutral-200" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </div>
-      <div
-        id="menu"
-        class="fixed top-[75px] ease-out duration-300 sm:top-0 w-full left-0 sm:py-0 pt-2 pb-4 dm:mx-0 left-0 z-40 flex-col items-end justify-start hidden w-full h-auto text-sm sm:text-base sm:h-auto sm:relative sm:flex-row sm:flex sm:text-md sm:w-auto sm:pr-0 sm:pt-0"
-      >
-        <div
-          class="absolute inset-0 top-0 right-0 block w-full h-full px-3 sm:hidden"
-        >
-          <div
-            class="relative w-full h-full bg-white border border-dashed border-neutral-300 dark:border-neutral-700 backdrop-blur-sm rounded-xl dark:bg-neutral-950"
-          ></div>
-        </div>
-        {
-          menus.map((menu) => {
-            const isActive = currentPath === menu.url;
-            return (
-              <a
-                href={menu.url}
-                class={`relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white ${
-                  isActive ? 'text-slate-400 font-extrabold' : menu.color ?? ''
-                }`}
-              >
-                {menu.name}
-              </a>
-            );
-          })
-        }
+      <div id="menu" class="relative z-40 flex flex-col items-end justify-start w-full text-sm sm:justify-start sm:flex-row sm:text-md sm:w-auto sm:pr-0 sm:pt-0">
+        <!-- Mapeo de los menús -->
+        {menus.map((menu) => {
+          const isActive = currentPath === menu.url;
+          return (
+            <a
+              href={menu.url}
+              class={`relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white ${
+                isActive ? 'text-slate-400 font-extrabold' : menu.color ?? ''
+              }`}
+            >
+              {menu.name}
+            </a>
+          );
+        })}
       </div>
     </nav>
   </div>
 </header>
+
+<style>
+
+
+
+
+</style>
