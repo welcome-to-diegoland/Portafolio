@@ -4,8 +4,8 @@ import PageHeading from "../components/page-heading.astro";
 import Project from "../components/proj-cmyk.astro";
 import Layout from "../layouts/main.astro";
 import Separator from "../components/home/separator.astro";
-
 ---
+
 <Layout title="about!">
   <section class="relative max-w-4xl px-7 mx-auto mt-1 lg:mt-0">
     <div class="flex items-start md:flex-row">
@@ -19,16 +19,16 @@ import Separator from "../components/home/separator.astro";
             !
           </span>
         </h1>
-  <p class=" text-xl text-neutral-600 dark:text-neutral-400">
-      <b class='text-fuchsia-600 '> diego medel gómez</b></br>
-<span class="text-base font-normal">
-  licenciado en diseño gráfico, pim admin & web admin
-</span>
-  </p>
-  <p class=" text-g text-neutral-600 dark:text-neutral-400">
-    <b class='text-fuchsia-600 '>email:</b> diegoamedel@gmail.com</br>
-    <b class='text-fuchsia-600 '>teléfono:</b> (442) 155 8893
-  </p>
+        <p class=" text-xl text-neutral-600 dark:text-neutral-400">
+          <b class='text-fuchsia-600 '> diego medel gómez</b></br>
+          <span class="text-base font-normal">
+            licenciado en diseño gráfico, pim admin & web admin
+          </span>
+        </p>
+        <p class=" text-g text-neutral-600 dark:text-neutral-400">
+          <b class='text-fuchsia-600 '>email:</b> diegoamedel@gmail.com</br>
+          <b class='text-fuchsia-600 '>teléfono:</b> (442) 155 8893
+        </p>
       </div>
 
       <!-- Image -->
@@ -38,17 +38,51 @@ import Separator from "../components/home/separator.astro";
         </div>
       </div>
     </div>
-      <Separator  />
 
-        <h2 class="text-4xl font-bold leading-10 tracking-tight text-fuchsia-600">
-    about<b class='text-cyan-400'>!</b>
-  </h2>
-        <p class="mt-2 text-base text-neutral-600">
-          Titulado en <b class='text-pink-500'>diseñador gráfico,</b> pero el destino (y un poco de terquedad) me llevó por caminos inesperados. Todo cambió cuando descubrí <b class='text-cyan-400'>VLOOKUP</b> en Excel: fue mi entrada al mundo de la automatización, y desde entonces no he parado de buscar formas de <b class='text-fuchsia-600'>trabajar mejor, más rápido</b> y sin tareas repetitivas.<br><br>
+    <Separator />
 
-          Cuento con más de 11 años de experiencia usando herramientas de diseño como <b class='text-pink-500'>InDesign, Illustrator y Photoshop</b>, además de sistemas PIM y DAM, Excel avanzado, Pentaho y ahora también desarrollo web. Lo que comenzó como necesidad, <b class='text-cyan-400'>evitar procesos manuales y lentos</b>, se volvió una pasión por entender y mejorar los flujos de trabajo.<br><br>
+    <h2 class="text-4xl font-bold leading-10 tracking-tight text-fuchsia-600">
+      about<b class='text-cyan-400'>!</b>
+    </h2>
 
-          Me gusta el diseño editorial, tanto como una buena fórmula de Excel. Disfruto entender cómo fluye la información en una empresa, automatizar procesos con Pentaho, y probar que siempre se puede aprender algo nuevo. Me mueven la lógica, la estética y <b class='text-fuchsia-600'>ese momento en que un sistema complejo finalmente hace click!</b>
-        </p>
+    <p class="mt-2 text-base text-neutral-600">
+      Titulado en <b class='text-pink-500'>diseñador gráfico,</b> pero el destino (y un poco de terquedad) me llevó por caminos inesperados. Todo cambió cuando descubrí <b class='text-cyan-400'>VLOOKUP</b> en Excel: fue mi entrada al mundo de la automatización, y desde entonces no he parado de buscar formas de <b class='text-fuchsia-600'>trabajar mejor, más rápido</b> y sin tareas repetitivas.<br><br>
+
+      Cuento con más de 11 años de experiencia usando herramientas de diseño como <b class='text-pink-500'>InDesign, Illustrator y Photoshop</b>, además de sistemas PIM y DAM, Excel avanzado, Pentaho y ahora también desarrollo web. Lo que comenzó como necesidad, <b class='text-cyan-400'>evitar procesos manuales y lentos</b>, se volvió una pasión por entender y mejorar los flujos de trabajo.<br><br>
+
+      Me gusta el diseño editorial, tanto como una buena fórmula de Excel. Disfruto entender cómo fluye la información en una empresa, automatizar procesos con Pentaho, y probar que siempre se puede aprender algo nuevo. Me mueven la lógica, la estética y <b class='text-fuchsia-600'>ese momento en que un sistema complejo finalmente hace click!</b>
+    </p>
+
+    <Separator />
+
+    <!-- Formulario de contacto -->
+    <h2 class="text-4xl font-bold leading-10 tracking-tight text-fuchsia-600">
+      contáctame<b class='text-cyan-400'>!</b>
+    </h2>
+    <form action="/submit-form" method="POST" class="mt-4 space-y-2">
+      <div class="flex flex-col">
+        <label for="name" class="text-fuchsia-600 text-g font-medium ">nombre</label>
+        <input type="text" id="name" name="name" class="px-3 py-1 border border-neutral-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-400" required />
+      </div>
+
+      <div class="flex flex-col">
+        <label for="email" class="text-fuchsia-600 text-g font-medium ">email</label>
+        <input type="email" id="email" name="email" class="px-3 py-1 border border-neutral-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-400" required />
+      </div>
+
+      <div class="flex flex-col">
+        <label for="phone" class="text-fuchsia-600 text-g font-medium ">teléfono (opcional)</label>
+        <input type="tel" id="phone" name="phone" class="px-3 py-1 border border-neutral-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+      </div>
+
+      <div class="flex flex-col">
+        <label for="message" class="text-fuchsia-600 text-g font-medium ">mensaje</label>
+        <textarea id="message" name="message" rows="2" class="px-3 py-2 border border-neutral-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-400" required></textarea>
+      </div>
+</br>
+      <button type="submit" class="px-6 py-2 mt-6 bg-cyan-500 text-white font-bold rounded-none hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        enviar mensaje
+      </button>
+    </form>
   </section>
 </Layout>
